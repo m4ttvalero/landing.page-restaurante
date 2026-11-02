@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VÉRA — Gastronomia Contemporânea</title>
+    <meta
+      name="description"
+      content="VÉRA, gastronomia contemporânea. Projeto demonstrativo da Studio MV."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+    <header id="topo" class="hdr">
+      <a class="logo" href="#inicio" aria-label="VÉRA, início">VÉRA</a>
+      <nav id="nav" class="nav" aria-label="Principal">
+        <a href="#inicio">Início</a><a href="#cardapio">Cardápio</a
+        ><a href="#experiencia">Experiência</a><a href="#sobre">Sobre</a
+        ><a href="#contato">Contato</a>
+        <a class="btn btn-gold nav-cta" href="#reservas">Reservar mesa</a>
+      </nav>
+      <button
+        id="burger"
+        class="burger"
+        aria-expanded="false"
+        aria-controls="nav"
+        aria-label="Abrir menu"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main id="conteudo">
+      <section id="inicio" class="hero">
+        <img
+          class="hero-img"
+          src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=2000&q=80"
+          alt="Salão do restaurante com iluminação baixa e mesas postas"
+        />
+        <div class="hero-in">
+          <p class="kicker">VÉRA · Gastronomia contemporânea</p>
+          <h1>Uma experiência que vai além do sabor.</h1>
+          <p class="lead">
+            Cozinha autoral de fogo e estação, em um salão pensado para
+            demorar-se à mesa.
+          </p>
+          <div class="actions">
+            <a class="btn btn-gold" href="#cardapio">Explorar cardápio</a
+            ><a class="btn btn-ghost" href="#reservas">Reservar mesa</a>
+          </div>
+        </div>
+        <a class="scroll" href="#sobre" aria-label="Rolar para a próxima seção"
+          ><span></span>Role</a
+        >
+      </section>
+
+      <section id="sobre" class="sec about">
+        <div class="about-img rv">
+          <img
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80"
+            alt="Prato elaborado servido em louça escura"
+          />
+        </div>
+        <div class="about-txt rv">
+          <h2>Poucos ingredientes, muito critério.</h2>
+          <p>
+            A VÉRA nasce de uma ideia simples: cozinhar com atenção. O menu é
+            curto, muda com a estação e parte de ingredientes escolhidos pela
+            qualidade e pela origem.
+          </p>
+          <p>
+            No salão, luz baixa, madeira e tempo. Uma refeição para ser servida
+            sem pressa e lembrada depois.
+          </p>
+        </div>
+      </section>
+
+      <section id="cardapio" class="sec menu">
+        <div class="head rv">
+          <h2>Cardápio</h2>
+          <p>Seleção demonstrativa. Toque em um prato para ver os detalhes.</p>
+        </div>
+        <div
+          id="filters"
+          class="filters"
+          role="group"
+          aria-label="Filtrar por categoria"
+        ></div>
+        <div id="menuGrid" class="menu-grid"></div>
+        <p class="note">
+          Valores e ingredientes são demonstrativos. Para alergias ou restrições
+          alimentares, confirme os ingredientes diretamente com o restaurante.
+        </p>
+      </section>
+
+      <section id="destaque" class="feat">
+        <div class="feat-img">
+          <img
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80"
+            alt="Prato principal da casa com acompanhamentos"
+          />
+        </div>
+        <div class="feat-txt rv">
+          <p class="kicker">Prato da casa</p>
+          <h2 id="featName"></h2>
+          <p id="featDesc"></p>
+          <p class="price" id="featPrice"></p>
+          <button class="btn btn-gold" id="featBtn" type="button">
+            Ver detalhes
+          </button>
+        </div>
+      </section>
+
+      <section id="experiencia" class="sec exp">
+        <div class="head rv"><h2>A experiência VÉRA</h2></div>
+        <div class="exp-list">
+          <article class="rv">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21c-4-3-7-6-7-10a7 7 0 0 1 14 0c0 4-3 7-7 10z" />
+              <path d="M12 8v6M9 11h6" />
+            </svg>
+            <h3>Ingredientes selecionados</h3>
+            <p>Escolhidos pela qualidade e pela estação.</p>
+          </article>
+          <article class="rv">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 20V9l8-5 8 5v11" />
+              <path d="M9 20v-6h6v6" />
+            </svg>
+            <h3>Ambiente acolhedor</h3>
+            <p>Um salão calmo, com luz baixa e conforto.</p>
+          </article>
+          <article class="rv">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 3c2 3 5 4 5 8a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3 0-5 1-7z"
+              />
+              <path d="M8 21h8" />
+            </svg>
+            <h3>Preparo cuidadoso</h3>
+            <p>Técnica e tempo certos em cada prato.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="galeria" class="sec gal">
+        <div class="head rv"><h2>Galeria</h2></div>
+        <div id="galGrid" class="gal-grid"></div>
+      </section>
+
+      <section id="reservas" class="sec book">
+        <div class="book-txt rv">
+          <h2>Reservar mesa</h2>
+          <p>
+            Preencha os dados e enviaremos sua solicitação por WhatsApp. A
+            reserva só é confirmada após a resposta do restaurante.
+          </p>
+        </div>
+        <form id="form" class="form rv" novalidate>
+          <label
+            >Nome<input
+              name="nome"
+              autocomplete="name"
+              required /><small></small
+          ></label>
+          <label
+            >Telefone<input
+              name="tel"
+              type="tel"
+              inputmode="tel"
+              autocomplete="tel"
+              placeholder="(00) 00000-0000"
+              required /><small></small
+          ></label>
+          <label
+            >Data<input name="data" type="date" required /><small></small
+          ></label>
+          <label
+            >Horário<select name="hora" required></select
+            ><small></small
+          ></label>
+          <label
+            >Pessoas<select name="pessoas" required></select
+            ><small></small
+          ></label>
+          <label class="full"
+            >Observações (opcional)<textarea name="obs" rows="3"></textarea>
+          </label>
+          <button class="btn btn-gold full" type="submit">
+            Enviar solicitação
+          </button>
+          <p id="formMsg" class="form-msg full" role="status"></p>
+        </form>
+      </section>
+
+      <section id="contato" class="sec info">
+        <div class="rv">
+          <h2>Localização e horários</h2>
+          <p class="demo">Dados fictícios, apenas para demonstração.</p>
+          <p id="addr"></p>
+          <dl id="hours" class="hours"></dl>
+        </div>
+        <div class="rv contact">
+          <h3>Contato</h3>
+          <p><a id="telLink" href="#"></a></p>
+          <div class="actions">
+            <a
+              id="wa"
+              class="btn btn-gold"
+              target="_blank"
+              rel="noopener"
+              href="#"
+              >WhatsApp</a
+            ><a
+              id="maps"
+              class="btn btn-ghost-d"
+              target="_blank"
+              rel="noopener"
+              href="#"
+              >Abrir no Google Maps</a
+            >
+          </div>
+          <div id="map" class="map"></div>
+          <ul id="social" class="social"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div>
+        <a class="logo" href="#inicio">VÉRA</a>
+        <p>Gastronomia contemporânea. Projeto demonstrativo.</p>
+      </div>
+      <div>
+        <h3>Navegar</h3>
+        <a href="#inicio">Início</a><a href="#cardapio">Cardápio</a
+        ><a href="#experiencia">Experiência</a><a href="#sobre">Sobre</a
+        ><a href="#contato">Contato</a>
+      </div>
+      <div>
+        <h3>Cardápio</h3>
+        <div id="footCats"></div>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p id="fAddr"></p>
+        <p id="fTel"></p>
+        <p id="fHours"></p>
+      </div>
+      <p class="copy">
+        © <span id="year"></span> VÉRA. Todos os direitos reservados.
+        Desenvolvido por
+        <a
+          href="https://www.google.com/search?q=Studio+MV"
+          target="_blank"
+          rel="noopener"
+          >Studio MV</a
+        >.
+      </p>
+    </footer>
+
+    <dialog id="dish" class="dlg" aria-labelledby="dName">
+      <button class="x" data-close aria-label="Fechar">×</button>
+      <div class="dish-body">
+        <img id="dImg" alt="" />
+        <div>
+          <p class="kicker" id="dCat"></p>
+          <h3 id="dName"></h3>
+          <p id="dDesc"></p>
+          <p id="dIng" class="ing"></p>
+          <p class="price" id="dPrice"></p>
+          <p class="note">
+            Confirme ingredientes e restrições diretamente com o restaurante.
+          </p>
+          <a class="btn btn-gold" href="#reservas" data-close>Reservar mesa</a>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="lb" class="dlg lb" aria-label="Galeria ampliada">
+      <button class="x" data-close aria-label="Fechar">×</button>
+      <button class="nv prev" id="prev" aria-label="Foto anterior">‹</button>
+      <img id="lbImg" alt="" />
+      <button class="nv next" id="next" aria-label="Próxima foto">›</button>
+    </dialog>
+    <script src="script.js" defer></script>
+  </body>
+</html>
